@@ -1,0 +1,141 @@
+:root {
+  --bg: #004aad;      /* Azul principal */
+  --white: #FFFFFF;
+  --gray: #374151;
+}
+
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+
+.logo {
+  width: 90px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.titulo {
+  font-size: 2.75rem;
+  margin-top: 0.5rem;
+}
+
+.tagline {
+  font-size: 1.125rem;
+  opacity: 0.85;
+  margin-top: 0.25rem;
+}
+
+.links {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 320px;
+  padding: 0.75rem 1.25rem;
+  text-decoration: none;
+  background: var(--white);
+  color: var(--gray);
+  font-weight: 600;
+  border-radius: 9999px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.icon {
+  width: 24px;
+  height: auto;
+  margin-right: 0.75rem;
+}
+
+.app-badges {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  max-width: 320px;
+  width: 100%;
+}
+
+.badge-link {
+  flex: 1;
+}
+
+.badge-link img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.2s;
+}
+
+.badge-link:hover img {
+  transform: scale(1.05);
+}
+
+.team {
+  text-align: center;
+  margin-top: 2.5rem;
+  padding: 0 1rem;
+  max-width: 320px;
+}
+
+.team-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.team h2 {
+  font-size: 1.5rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.team p {
+  font-size: 1rem;
+  opacity: 0.9;
+  line-height: 1.4;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  background: rgba(0,0,0,0.1);
+}
+
+@media (min-width: 640px) {
+  .links {
+    flex-direction: column;
+  }
+}
