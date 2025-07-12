@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiénes Somos | KID-IA</title>
+    <link rel="icon" type="image/png" href="../images/logo.png" />
+    <link rel="stylesheet" href="../css/news.css" />
+    <link rel="stylesheet" href="../css/quienes-somos.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="main-nav">
+        <div class="nav-logo" style="margin-right:auto;">
+          <a href="../index.html"><img src="../images/logo.png" alt="Logo KID-IA" class="logo" style="display:block;width:60px;height:auto;"></a>
+        </div>
+        <ul class="nav-list">
+          <li><a href="../index.html" data-i18n="nav_inicio">Inicio</a></li>
+          <li><a href="../pags/nws.html" data-i18n="nav_noticias">Noticias</a></li>
+          <li><a href="#" class="active" data-i18n="nav_quienes">Quiénes Somos</a></li>
+          <li><a href="../pags/contacto.html" data-i18n="nav_contacto">Contacto</a></li>
+          <li>
+            <select id="lang-select" style="margin-left:12px;">
+              <option value="es-MX">Español (México)</option>
+              <option value="en-US">English (US)</option>
+              <option value="fr-FR">Français (France)</option>
+              <option value="pt-BR">Português (Brasil)</option>
+              <option value="it">Italiano</option>
+              <option value="ko">한국어</option>
+              <option value="de">Deutsch</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="titulo" data-i18n="quienes_titulo">Quiénes Somos</h1>
+      <p class="tagline" data-i18n="quienes_tagline">Conoce más sobre KID-IA y nuestro equipo</p>
+    <script src="../intl/js/langs.js"></script>
+    <script src="../intl/js/langs-quienes.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const select = document.getElementById('lang-select');
+        if (select) {
+          const saved = localStorage.getItem('lang');
+          if (saved) {
+            setLanguage(saved);
+            setQuienesLanguage(saved);
+            select.value = saved;
+          } else {
+            setLanguage('es-MX');
+            setQuienesLanguage('es-MX');
+          }
+        } else {
+          setQuienesLanguage('es-MX');
+        }
+      });
+    </script>
+    </header>
+    <main class="about-main">
+      <!-- Título movido al header -->
+      <div class="about-section">
+        <h2 data-i18n="quienes_quees_titulo">¿Qué es KID-IA?</h2>
+        <p data-i18n="quienes_quees_1">
+          KID-IA es una aplicación móvil innovadora diseñada para apoyar el desarrollo integral de niños y niñas con Trastorno del Espectro Autista (TEA). Utilizamos inteligencia artificial para personalizar actividades de refuerzo, adaptándose a las necesidades y avances de cada usuario. El objetivo es brindar herramientas inclusivas, accesibles y efectivas para familias, terapeutas, educadores y pacientes, promoviendo la autonomía y el aprendizaje significativo.
+        </p>
+        <p data-i18n="quienes_quees_2">
+          La plataforma integra dinámicas y juegos interactivos, seguimiento de progreso a través del especialista y recomendaciones personalizadas, todo en un entorno seguro y amigable. KID-IA busca ser un puente entre la tecnología y la inclusión, facilitando el acompañamiento terapéutico y educativo de manera divertida y efectiva.
+        </p>
+        <p data-i18n="quienes_quees_3">
+          Con KID-IA, queremos empoderar a las familias y profesionales para que puedan ofrecer un apoyo más efectivo y adaptado a las necesidades de cada niño, fomentando su desarrollo y bienestar integral.
+        </p>
+      </div>
+      <div class="onu-objs">
+        <h2 data-i18n="quienes_ods_titulo">Objetivos de Desarrollo Sostenible (ODS)</h2>
+        <p data-i18n="quienes_ods_1">
+          En KID-IA, estamos comprometidos con los Objetivos de Desarrollo Sostenible de la Agenda 2030, propuesta por la Organización de las Naciones Unidas, y con el Plan Estatal de Desarrollo del Gobierno del Estado de Tamaulipas.
+        </p>
+        <div class="ods-collage">
+          <div class="ods-item">
+            <img
+              src="../images/ods_logos/ods_3.jpg"
+              alt="ODS 3: Salud y Bienestar"
+              class="ods-logo"
+            />
+            <span data-i18n="quienes_ods_3">Salud y Bienestar</span>
+          </div>
+          <div class="ods-item">
+            <img
+              src="../images/ods_logos/ods_4.jpg"
+              alt="ODS 4: Educación de Calidad"
+              class="ods-logo"
+            />
+            <span data-i18n="quienes_ods_4">Educación de Calidad</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-section">
+        <h2 data-i18n="quienes_equipo_titulo">El equipo detrás de KID-IA</h2>
+        <div class="about-team">
+          <div class="about-member">
+            <img
+              src="../images/kid-ia_team/vic.jpg"
+              alt="Víctor Eduardo Acosta Villalón"
+            />
+            <h3 data-i18n="quienes_vic_nombre">Víctor Eduardo Acosta Villalón</h3>
+            <p data-i18n="quienes_vic_desc">
+              Víctor Eduardo Acosta Villalón, líder de KID-IA, responsable de la dirección técnica y metodológica del proyecto. Con solo 20 años, ya acumula premios nacionales e internacionales, propiedad intelectual registrada y publicaciones. Estudiante de TSU en Mecatrónica, se ha consolidado como una figura emergente de la innovación tecnológica con impacto social.
+            </p>
+          </div>
+          <div class="about-member">
+            <img
+              src="../images/kid-ia_team/jero.jpg"
+              alt="Luis Jerónimo Loera"
+            />
+            <h3 data-i18n="quienes_jero_nombre">Luis Jerónimo Loera Moreno</h3>
+            <p data-i18n="quienes_jero_desc">
+              Mi nombre es Luis Jerónimo Loera Moreno. Soy desarrollador de KIDIA, una app educativa impulsada por inteligencia artificial que apoya el aprendizaje de niños con autismo. Utilizo IA y herramientas de vanguardia para crear soluciones accesibles, interactivas y personalizadas que promuevan la inclusión desde la primera infancia.
+            </p>
+          </div>
+          <div class="about-member">
+            <img
+              src="../images/kid-ia_team/ruben.jpg"
+              alt="Rubén Alexander Rodríguez Muñoz"
+            />
+            <h3 data-i18n="quienes_ruben_nombre">Ruben Alexander Rodríguez Muñoz</h3>
+            <p data-i18n="quienes_ruben_desc">
+              Mi nombre es Rubén. Diagnosticado con autismo grado 1 desde los 19 años, soy un estudiante comprometido con la educación y la investigación, con experiencia en divulgación científica y participación en eventos académicos nacionales. He desarrollado habilidades en liderazgo, idiomas, tecnología y trabajo interdisciplinario que me impulsan a seguir aprendiendo y aportando al conocimiento.
+            </p>
+          </div>
+          <div class="about-member">
+            <img
+              src="../images/kid-ia_team/drsoto.jpg"
+              alt="Dr. Diego Arturo Soto Monterrubio"
+            />
+            <h3 data-i18n="quienes_drsoto_nombre">Dr. Diego Arturo Soto Monterrubio</h3>
+            <p data-i18n="quienes_drsoto_desc">
+              Asesor científico y terapéutico. Especialista en neurodesarrollo y educación inclusiva, guía la validación y enfoque terapéutico de la app.
+            </p>
+          </div>
+          <div class="about-member">
+            <img
+              src="../images/kid-ia_team/mtroahumada.jpg"
+              alt="Mtro. José Antonio Rodríguez Ahumada"
+            />
+            <h3 data-i18n="quienes_ahumada_nombre">Mtro. José Antonio Rodríguez Ahumada</h3>
+            <p data-i18n="quienes_ahumada_desc">
+              Asesor científico. Especialista en Programación de Redes Neuronales, Inteligencia Artificial y Programación Orientada a Objetos.
+            </p>
+          </div>
+          <div class="about-member">
+            <img
+              src="../images/kidia_team.jpeg"
+              alt="Mtra. Mariana Soledad Centeno Sierra"
+            />
+            <h3 data-i18n="quienes_mariana_nombre">Mtra. Mariana Soledad Centeno Sierra</h3>
+            <p data-i18n="quienes_mariana_desc">
+              Directora de carrera y asesora institucional. Impulsa la vinculación académica y la proyección del proyecto.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>© 2025 KID-IA</p>
+    </footer>
+  </body>
+</html>

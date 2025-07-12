@@ -1,0 +1,177 @@
+/* Banner de contacto y slider social */
+.contact-banner-main {
+  width: 100%;
+  background: #004aad;
+  padding: 2.2rem 0 2.2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem 0 2.5rem 0;
+}
+/* NUEVO: Banner de contacto con redes y donación, vertical en la derecha */
+.contact-banner-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  gap: 2.5rem;
+}
+.contact-banner-social-left {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: #fff;
+  padding-left: 1.5rem;
+}
+.contact-banner-social-title {
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  color: #fff;
+}
+.contact-banner-social-tagline {
+  font-size: 1.1rem;
+  color: #e3edfa;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.contact-banner-social-right {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  gap: 1.5rem;
+}
+.contact-social-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+}
+.contact-social-legend {
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  text-align: center;
+}
+.contact-social-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+}
+.contact-social-icon {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.contact-social-icon:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+}
+.donation-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+}
+.donation-legend {
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  text-align: center;
+}
+.donation-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  background: white;
+  background-color: white;
+  color: #004aad;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 32px;
+  padding: 0.6rem 1.5rem;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.donation-btn:focus, .donation-btn:hover {
+  background: #e3edfa;
+  color: #003377;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+}
+.donation-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: white;
+}
+@media (max-width: 900px) {
+  .contact-banner-social {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 0.5rem;
+  }
+  .contact-banner-social-left, .contact-banner-social-right {
+    width: 100%;
+    align-items: center;
+    padding-left: 0;
+    text-align: center;
+  }
+  .contact-banner-social-title {
+    font-size: 1.3rem;
+  }
+  .contact-social-icon {
+    width: 34px;
+    height: 34px;
+  }
+  .donation-btn {
+    font-size: 1rem;
+    padding: 0.5rem 1.1rem;
+  }
+  .donation-logo {
+    width: 22px;
+    height: 22px;
+  }
+}
+@media (max-width: 600px) {
+  .contact-banner-main {
+    padding: 1.2rem 0 1.2rem 0;
+    margin: 1.2rem 0 1.2rem 0;
+  }
+  .contact-banner-social-title {
+    font-size: 1.01rem;
+  }
+  .contact-banner-social-tagline {
+    font-size: 0.98rem;
+  }
+  .contact-social-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .donation-btn {
+    font-size: 0.95rem;
+    padding: 0.4rem 0.7rem;
+  }
+  .donation-logo {
+    width: 16px;
+    height: 16px;
+  }
+}

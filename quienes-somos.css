@@ -1,0 +1,198 @@
+/* --- MEJORAS RESPONSIVAS Y DE ACCESIBILIDAD PARA QUIENES-SOMOS --- */
+@media (max-width: 480px) {
+  .about-main {
+    padding: 0.7rem 0.1rem 0.7rem 0.1rem;
+    border-radius: 8px;
+  }
+  .about-section h2 {
+    font-size: 1.01rem;
+    margin-bottom: 0.4rem;
+  }
+  .about-section p {
+    font-size: 0.97rem;
+    line-height: 1.5;
+  }
+  .about-team {
+    gap: 0.7rem;
+  }
+  .about-member {
+    max-width: 98vw;
+    padding: 0.7rem 0.3rem 0.7rem 0.3rem;
+  }
+  .about-member img {
+    width: 60px;
+    height: 60px;
+  }
+}
+/* Collage ODS */
+.ods-collage {
+  display: flex;
+  gap: 2.2rem;
+  justify-content: center;
+  align-items: center;
+  margin: 1.2rem 0 1.7rem 0;
+  flex-wrap: wrap;
+}
+.ods-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f4f8fd;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0,74,173,0.07);
+  padding: 1rem 1.2rem 0.7rem 1.2rem;
+  min-width: 120px;
+  max-width: 160px;
+}
+.ods-item img.ods-logo {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0,74,173,0.10);
+}
+.ods-item span {
+  font-size: 1.01rem;
+  color: #0059c5;
+  font-weight: 500;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .ods-collage {
+    gap: 1.1rem;
+  }
+  .ods-item {
+    min-width: 90px;
+    max-width: 120px;
+    padding: 0.7rem 0.5rem 0.5rem 0.5rem;
+  }
+  .ods-item img.ods-logo {
+    width: 48px;
+    height: 48px;
+  }
+}
+/* quienes-somos.css: Estilos exclusivos para la página 'Quiénes Somos' de KID-IA */
+
+.about-main {
+  max-width: 900px;
+  margin: 2.5rem auto 2rem auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  padding: 2.5rem 2rem 2.5rem 2rem;
+  color: #374151;
+}
+.about-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #004aad;
+  margin-bottom: 1.2rem;
+}
+.about-section {
+  margin-bottom: 2.2rem;
+}
+.about-section h2 {
+  color: #0059c5;
+  font-size: 1.3rem;
+  margin-bottom: 0.7rem;
+  font-weight: 600;
+}
+/* Estilo uniforme para el combobox de selección de idioma en todas las páginas */
+#lang-select {
+  background: #fffaf0 !important; /* blanco marfil */
+  color: #004aac !important;
+  border: 1.5px solid #cfd8e3;
+  border-radius: 8px;
+  padding: 0.35em 1.2em 0.35em 0.7em;
+  font-size: 1rem;
+  font-weight: 600;
+  outline: none;
+  box-shadow: 0 1px 4px rgba(0,74,172,0.07);
+  transition: border 0.18s, box-shadow 0.18s;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  display: block;
+}
+#lang-select:focus {
+  border: 1.5px solid #004aac;
+  box-shadow: 0 0 0 2px #e3edfa;
+}
+#lang-select option {
+  background: #fffaf0;
+  color: #004aac;
+}
+.about-section p {
+  font-size: 1.08rem;
+  line-height: 1.7;
+  margin-bottom: 0.7rem;
+}
+.about-team {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.2rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+.about-member {
+  background: #e3edfa;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px rgba(0,74,173,0.07);
+  padding: 1.2rem 1.1rem 1.1rem 1.1rem;
+  max-width: 260px;
+  flex: 1 1 220px;
+  text-align: center;
+}
+.about-member img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 0.7rem;
+  box-shadow: 0 1px 6px rgba(0,74,173,0.10);
+}
+.about-member h3 {
+  font-size: 1.08rem;
+  color: #004aad;
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+.about-member p {
+  font-size: 0.98rem;
+  color: #374151;
+  margin-bottom: 0.2rem;
+}
+@media (max-width: 700px) {
+  .header-flex {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  .nav-logo {
+    flex: 0 0 auto;
+  }
+  .main-nav {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+  .titulo {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1.2rem 0 1.2rem 0;
+    color: #fff;
+    font-weight: 700;
+    width: 100%;
+    display: block;
+  }
+  .about-main {
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+  }
+  .about-team {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+}

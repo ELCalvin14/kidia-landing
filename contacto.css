@@ -1,0 +1,293 @@
+/* Estilo uniforme para el combobox de selección de idioma en todas las páginas */
+#lang-select {
+  background: #fffaf0 !important; /* blanco marfil */
+  color: #004aac !important;
+  border: 1.5px solid #cfd8e3;
+  border-radius: 8px;
+  padding: 0.35em 1.2em 0.35em 0.7em;
+  font-size: 1rem;
+  font-weight: 600;
+  outline: none;
+  box-shadow: 0 1px 4px rgba(0,74,172,0.07);
+  transition: border 0.18s, box-shadow 0.18s;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  display: block;
+}
+#lang-select:focus {
+  border: 1.5px solid #004aac;
+  box-shadow: 0 0 0 2px #e3edfa;
+}
+#lang-select option {
+  background: #fffaf0;
+  color: #004aac;
+}
+/* Estilos específicos para la página de contacto */
+.contact-main-banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 420px;
+  margin: 3.5rem auto 2.5rem auto;
+}
+.contact-banner {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  padding: 2.5rem 2.5rem;
+  color: #374151;
+  gap: 2.5rem;
+  width: 100%;
+  max-width: 900px;
+  min-height: 320px;
+  align-items: center;
+  justify-content: center;
+}
+.contact-banner-left, .contact-banner-right {
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  min-width: 0;
+  background: #fff;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 12px;
+}
+.contact-banner-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #004aad;
+  margin-bottom: 0.7rem;
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  padding: 0.3rem 0.5rem;
+}
+.contact-banner-middle {
+  flex: 0 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: #fff;
+  border-radius: 12px;
+}
+.contact-banner-o {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #004aad;
+  background: #e3edfa;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,74,173,0.10);
+}
+.contact-btn, .badge-link {
+  transition: transform 0.22s cubic-bezier(.4,1.6,.4,1), box-shadow 0.22s cubic-bezier(.4,1.6,.4,1);
+}
+.zoomable:hover, .zoomable:focus {
+  transform: scale(1.08);
+  box-shadow: 0 6px 24px rgba(0,74,173,0.18);
+  z-index: 2;
+}
+/* Unifica el color de fondo y texto de los botones y sus labels */
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: #e3edfa;
+  color: #004aad;
+  font-weight: 600;
+  border-radius: 9999px;
+  padding: 0.85rem 1.5rem;
+  font-size: 1.08rem;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,74,173,0.07);
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+  width: 100%;
+  max-width: 320px;
+  min-width: 220px;
+  justify-content: center;
+}
+.contact-btn img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 50%;
+  padding: 2px;
+}
+.contact-btn span[data-i18n] {
+  background-color: #e3edfa;
+  color: #004aad !important;
+  font-weight: 600;
+}
+.app-badges-contact {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.7rem;
+  background: #fff;
+  border-radius: 12px;
+  padding: 0.7rem 0;
+}
+.badge-link {
+  flex: 1;
+  min-width: 120px;
+  max-width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #e0e8f3;
+  box-shadow: 0 2px 8px rgba(0,74,173,0.10);
+  padding: 0.3rem 0.7rem;
+}
+.badge-link img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.22s cubic-bezier(.4,1.6,.4,1);
+  background: #fff;
+  border-radius: 8px;
+  padding: 4px;
+}
+@media (max-width: 900px) {
+  .contact-banner {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem 0.5rem;
+    min-height: unset;
+  }
+  .contact-banner-left, .contact-banner-right {
+    width: 100%;
+    min-width: 0;
+    flex: 1 1 50%;
+    min-height: 180px;
+  }
+  .contact-banner-middle {
+    flex: 0 0 40px;
+    margin: 0.7rem 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .contact-main-banner {
+    min-height: unset;
+  }
+}
+@media (max-width: 600px) {
+  .contact-banner {
+    flex-direction: column;
+    padding: 0.7rem 0.2rem;
+    gap: 0.7rem;
+    min-height: unset;
+  }
+  .contact-banner-left, .contact-banner-right {
+    width: 100%;
+    min-width: 0;
+    flex: 1 1 50%;
+    min-height: 160px;
+  }
+  .contact-banner-middle {
+    flex: 0 0 30px;
+    margin: 0.7rem 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .contact-banner-title {
+    font-size: 1.01rem;
+  }
+  .contact-banner-o {
+    font-size: 1.5rem;
+    width: 32px;
+    height: 32px;
+  }
+  .contact-btn {
+    font-size: 0.98rem;
+    padding: 0.7rem 1rem;
+  }
+}
+.contact-title {
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1.2rem;
+}
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+}
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: #e3edfa;
+  color: #004aad;
+  font-weight: 600;
+  border-radius: 9999px;
+  padding: 0.85rem 1.5rem;
+  font-size: 1.08rem;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,74,173,0.07);
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+}
+.contact-btn:hover {
+  background: #d0e3fa;
+  color: #00316e;
+  box-shadow: 0 4px 16px rgba(0,74,173,0.13);
+}
+.contact-btn img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  background: none;
+  border-radius: 50%;
+}
+.app-badges-contact {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.2rem;
+}
+.badge-link {
+  flex: 1;
+  min-width: 120px;
+  max-width: 160px;
+}
+.badge-link img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.2s;
+}
+.badge-link:hover img {
+  transform: scale(1.05);
+}
+@media (max-width: 600px) {
+  .contact-main {
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+  }
+  .contact-title {
+    font-size: 1.3rem;
+  }
+  .contact-btn {
+    font-size: 0.98rem;
+    padding: 0.7rem 1rem;
+  }
+}
