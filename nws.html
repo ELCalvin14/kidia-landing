@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KID-IA Noticias</title>
+    <link rel="icon" type="image/png" href="../images/logo.png" />
+    <link rel="stylesheet" href="../css/news.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="main-nav">
+        <div class="nav-logo" style="margin-right:auto;">
+          <a href="../index.html"><img src="../images/logo.png" alt="Logo KID-IA" class="logo" style="display:block;width:60px;height:auto;"></a>
+        </div>
+        <ul class="nav-list">
+          <li><a href="../index.html" data-i18n="nav_inicio">Inicio</a></li>
+          <li><a href="#" class="active" data-i18n="nav_noticias">Noticias</a></li>
+          <li><a href="../pags/quienes-somos.html" data-i18n="nav_quienes">Quiénes Somos</a></li>
+          <li><a href="../pags/contacto.html" data-i18n="nav_contacto">Contacto</a></li>
+          <li>
+            <select id="lang-select" style="margin-left:12px;">
+              <option value="es-MX">Español (México)</option>
+              <option value="en-US">English (US)</option>
+              <option value="fr-FR">Français (France)</option>
+              <option value="pt-BR">Português (Brasil)</option>
+              <option value="it">Italiano</option>
+              <option value="ko">한국어</option>
+              <option value="de">Deutsch</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="titulo">KID-IA Noticias</h1>
+      <p class="tagline" data-i18n="news_tagline">¡Entérate de lo más reciente en nuestro proyecto!</p>
+    </header>
+    <div class="news-slider-container">
+      <div class="news-slider" id="newsSlider">
+        <img
+          src="../images/slider_nws/dpt_mcl_image_1.jpg"
+          alt="Slider Image 1"
+        />
+        <img
+          src="../images/slider_nws/dpt_mcl_image_2.jpg"
+          alt="Slider Image 2"
+        />
+        <img
+          src="../images/slider_nws/image_gp_garel_1.jpg"
+          alt="Slider Image 3"
+        />
+        <img
+          src="../images/slider_nws/INFOMATRIX_image_1.jpg"
+          alt="Slider Image 4"
+        />
+        <img
+          src="../images/slider_nws/pte_alt_image_1.jpg"
+          alt="Slider Image 5"
+        />
+        <!-- Agrega más imágenes aquí si lo deseas -->
+      </div>
+      <div class="slider-dots" id="sliderDots"></div>
+    </div>
+    <main class="news-main">
+      <section class="news-list-section">
+        <h2 class="news-list-title">Últimas noticias</h2>
+        <div class="news-list">
+          <!-- Las noticias se insertarán dinámicamente aquí por news-dynamic.js -->
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>© 2025 KID-IA</p>
+    </footer>
+    <script src="../intl/js/news/newsData.es.js"></script>
+    <script src="../intl/js/news/newsData.translations.js"></script>
+    <script src="../js/news-dynamic.js"></script>
+    <script src="../js/news-slider.js"></script>
+    <script src="../intl/js/langs.js"></script>
+    <script src="../intl/js/langs-news.js"></script>
+    <script src="../intl/js/langs-quienes.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const select = document.getElementById('lang-select');
+        if (select) {
+          // Sincronizar idioma global
+          const saved = localStorage.getItem('lang');
+          if (saved) {
+            setLanguage(saved);
+            setNewsLanguage(saved);
+            select.value = saved;
+          } else {
+            setLanguage('es-MX');
+            setNewsLanguage('es-MX');
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

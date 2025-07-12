@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | KID-IA</title>
+  <link rel="icon" type="image/png" href="../images/logo.png" />
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/contacto.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="main-nav">
+      <div class="nav-logo" style="margin-right:auto;">
+        <a href="../index.html"><img src="../images/logo.png" alt="Logo KID-IA" class="logo" style="display:block;width:60px;height:auto;"></a>
+      </div>
+      <ul class="nav-list">
+        <li><a href="../index.html" data-i18n="nav_inicio">Inicio</a></li>
+        <li><a href="nws.html" data-i18n="nav_noticias">Noticias</a></li>
+        <li><a href="quienes-somos.html" data-i18n="nav_quienes">Quiénes Somos</a></li>
+        <li><a href="#" class="active" data-i18n="nav_contacto">Contacto</a></li>
+        <li>
+          <select id="lang-select" style="margin-left:12px;">
+            <option value="es-MX">Español (México)</option>
+            <option value="en-US">English (US)</option>
+            <option value="fr-FR">Français (France)</option>
+            <option value="pt-BR">Português (Brasil)</option>
+            <option value="it">Italiano</option>
+            <option value="ko">한국어</option>
+            <option value="de">Deutsch</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+    <h1 class="titulo" data-i18n="contacto_titulo">Contacto</h1>
+    <p class="tagline" data-i18n="contacto_tagline">¡Conéctate con nosotros y descarga la app!</p>
+  <script src="../intl/js/langs.js"></script>
+  <script src="../intl/js/langs-contacto.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const select = document.getElementById('lang-select');
+      if (select) {
+        const saved = localStorage.getItem('lang');
+        if (saved) {
+          setLanguage(saved);
+          setContactoLanguage(saved);
+          select.value = saved;
+        } else {
+          setLanguage('es-MX');
+          setContactoLanguage('es-MX');
+        }
+      } else {
+        setContactoLanguage('es-MX');
+      }
+    });
+  </script>
+  </header>
+  <main class="contact-main-banner">
+    <div class="contact-banner">
+    <div class="contact-banner-left">
+      <div class="contact-banner-title" data-i18n="contacto_siguenos">¡Síguenos y Apóyanos</div>
+      <a class="contact-btn zoomable" href="https://link.clip.mx/kidiaapp/pagar" target="_blank">
+        <img src="../images/clip_logo.png" alt="Clip">
+        <span data-i18n="contacto_donar">Enviar donaciones</span>
+      </a>
+      <a class="contact-btn zoomable" href="https://www.instagram.com/_kid.ia" target="_blank">
+        <img src="../images/instagram_icon.png" alt="Instagram">
+        <span data-i18n="contacto_instagram">Síguenos en Instagram</span>
+      </a>
+      <a class="contact-btn zoomable" href="https://www.facebook.com/profile.php?id=61572686849941" target="_blank">
+        <img src="../images/facebook_icon.png" alt="Facebook">
+        <span data-i18n="contacto_facebook">Síguenos en Facebook</span>
+      </a>
+      <a class="contact-btn zoomable" href="https://api.whatsapp.com/send/?phone=528331851912" target="_blank">
+        <img src="../images/logo_wpp.png" alt="WhatsApp">
+        <span data-i18n="contacto_whatsapp">Contáctanos por WhatsApp</span>
+      </a>
+    </div>
+      <div class="contact-banner-middle">
+        <span class="contact-banner-o" data-i18n="contacto_o">o</span>
+      </div>
+      <div class="contact-banner-right">
+        <div class="contact-banner-title" data-i18n="contacto_descarga">Descarga Nuestra App!</div>
+        <div class="app-badges-contact">
+          <a class="badge-link zoomable" href="https://play.google.com/store/apps/details?id=com.proyect.kidia" target="_blank">
+            <img src="../images/google_play.png" alt="Get it on Google Play">
+          </a>
+          <a class="badge-link zoomable" href="https://apps.apple.com/mx/app/kid-ia/id6746974373" target="_blank">
+            <img src="../images/app_store.png" alt="Available on the App Store">
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>© 2025 KID-IA</p>
+  </footer>
+</body>
+</html>

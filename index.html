@@ -6,55 +6,163 @@
   <title>KID-IA</title>
   <link rel="icon" type="image/png" href="images/logo.png" />
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/news-carousel.css">
+  <link rel="stylesheet" href="css/contact-banner-social.css">
+  <link rel="stylesheet" href="css/contact-btn-main.css">
+  <link rel="stylesheet" href="css/about-banner.css">
 </head>
 <body>
   <header class="header">
-    <img src="images/logo.png" alt="Logo KID-IA" class="logo">
+    <nav class="main-nav">
+      <div class="nav-logo">
+        <img src="images/logo.png" alt="Logo KID-IA" class="logo">
+      </div>
+      <ul class="nav-list">
+        <li><a href="#home" data-i18n="nav_inicio">Inicio</a></li>
+        <li><a href="pags/nws.html" data-i18n="nav_noticias">Noticias</a></li>
+        <li><a href="pags/quienes-somos.html" data-i18n="nav_quienes">Quiénes Somos</a></li>
+        <li><a href="pags/contacto.html" data-i18n="nav_contacto">Contacto</a></li>
+        <li>
+          <select id="lang-select" style="margin-left:12px;">
+            <option value="es-MX">Español (México)</option>
+            <option value="en-US">English (US)</option>
+            <option value="fr-FR">Français (France)</option>
+            <option value="pt-BR">Português (Brasil)</option>
+            <option value="it">Italiano</option>
+            <option value="ko">한국어</option>
+            <option value="de">Deutsch</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
     <h1 class="titulo">KID-IA</h1>
     <p class="tagline">¡Innovando por un mundo más inclusivo!</p>
   </header>
 
-  <main class="links">
-    <a class="btn" href="https://link.clip.mx/kidiaapp/pagar" target="_blank">
-      <img src="images/clip_logo.png" alt="Clip" class="icon">
-      Enviar donaciones
-    </a>
-    <a class="btn" href="https://www.instagram.com/_kid.ia" target="_blank">
-      <img src="images/instagram_icon.png" alt="Instagram" class="icon">
-      Síguenos en Instagram
-    </a>
-    <a class="btn" href="https://www.facebook.com/profile.php?id=61572686849941" target="_blank">
-      <img src="images/facebook_icon.png" alt="Facebook" class="icon">
-      Síguenos en Facebook
-    </a>
-    <a class="btn" href="https://api.whatsapp.com/send/?phone=528331851912" target="_blank">
-      <img src="images/logo_wpp.png" alt="WhatsApp" class="icon">
-      Contáctanos por WhatsApp
-    </a>
+  <!-- Banner principal -->
+  <section class="main-banner">
+    <div class="banner-left">
+      <div class="banner-slider">
+        <img src="images/mktng/kid-ia-b-1.png" alt="Banner 1" class="banner-img active">
+        <img src="images/mktng/Flux_Dev_A_young_boy_with_Autism_Spectrum_Disorder_aged_around_3.jpg" alt="Equipo KID-IA" class="banner-img">
+        <img src="images/mktng/Flux_Dev_A_vibrant_and_engaging_mobile_application_interface_d_3.jpg" alt="Noticias KID-IA" class="banner-img">
+      </div>
+    </div>
+    <div class="banner-right">
+      <span class="banner-leyenda">La app móvil potenciada con IA para pacientes con Trastorno del Espectro Autista</span>
+    </div>
+  </section>
 
-    <div class="app-badges">
-      <a class="badge-link" href="https://play.google.com/store/apps/details?id=com.proyect.kidia" target="_blank">
-        <img src="images/google_play.png" alt="Get it on Google Play">
-      </a>
-      <a class="badge-link" href="https://apps.apple.com/mx/app/kid-ia/id6746974373" target="_blank">
-        <img src="images/app_store.png" alt="Available on the App Store">
-      </a>
+  <div class="banner-app-badges" style="margin: 0 auto 32px auto; display:flex; gap:18px; justify-content:center; max-width:420px;">
+    <a class="banner-badge-link" href="https://apps.apple.com/mx/app/kid-ia/id6746974373" target="_blank" rel="noopener" title="Disponible en App Store">
+      <img src="images/app_store.png" alt="Disponible en App Store" style="height:44px; width:auto; display:block; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+    </a>
+    <a class="banner-badge-link" href="https://play.google.com/store/apps/details?id=com.proyect.kidia" target="_blank" rel="noopener" title="Disponible en Google Play">
+      <img src="images/google_play.png" alt="Disponible en Google Play" style="height:44px; width:auto; display:block; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+    </a>
+  </div>
+  </section>
+
+
+  <section class="contact-banner-main">
+    <div class="contact-banner-social">
+      <div class="contact-banner-social-left">
+        <h2 class="contact-banner-social-title">¡Contáctanos!</h2>
+        <p class="contact-banner-social-tagline">¡Síguenos en nuestras redes y mantente al tanto nuevas actualizaciones y eventos!</p>
+      </div>
+      <div class="contact-banner-social-right">
+        <div class="contact-social-section">
+          <div class="contact-social-legend">Síguenos en nuestras redes</div>
+          <div class="contact-social-icons">
+            <a href="https://www.facebook.com/kidia.app" target="_blank" rel="noopener" title="Facebook">
+              <img src="images/facebook_icon.png" alt="Facebook" class="contact-social-icon">
+            </a>
+            <a href="https://www.instagram.com/kidia.app" target="_blank" rel="noopener" title="Instagram">
+              <img src="images/instagram_icon.png" alt="Instagram" class="contact-social-icon">
+            </a>
+            <a href="https://wa.me/5491122334455" target="_blank" rel="noopener" title="WhatsApp">
+              <img src="images/logo_wpp.png" alt="WhatsApp" class="contact-social-icon">
+            </a>
+          </div>
+        </div>
+        <div class="donation-section">
+          <div class="donation-legend">Apóyanos con tu donación</div>
+          <a href="https://link.clip.mx/kidiaapp/pagar" target="_blank" rel="noopener" class="donation-btn">
+            <img src="images/clip_logo.png" alt="Donar a KID-IA" class="donation-logo"> Dale apoyo a KID-IA
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="contact-btn-center">
+    <a class="contact-btn-main" href="pags/contacto.html">
+      <span>Ir a la página de contacto</span>
+    </a>
+  </div>
+  <script src="intl/js/langs.js"></script>
+  <script>
+    // Banner slider simple
+    document.addEventListener('DOMContentLoaded', function() {
+      const imgs = document.querySelectorAll('.banner-slider .banner-img');
+      let idx = 0;
+      setInterval(() => {
+        imgs.forEach((img, i) => img.classList.toggle('active', i === idx));
+        idx = (idx + 1) % imgs.length;
+      }, 3200);
+    });
+  </script>
+
+
+
+    <div style="height:32px;"></div>
+    <div class="news-carousel-container">
+      <h2 class="news-carousel-header">KID-IA Temas al Momento...</h2>
+      <div class="news-carousel-track">
+        <!-- Las noticias se insertarán dinámicamente aquí por news-carousel.js -->
+      </div>
     </div>
 
-    <section class="team">
-      <h2>¿Quiénes somos?</h2>
-      <img src="images/kidia_team.jpeg" alt="Equipo KID-IA" class="team-photo">
-      <p>
-        Somos un equipo multidisciplinario de desarrolladores, terapeutas y
-        educadores comprometidos con crear soluciones inclusivas que potencien
-        el desarrollo integral de niños y niñas con TEA, combinando tecnología,
-        diseño y afecto.
-      </p>
+    <div class="news-carousel-footer" style="width:100%;display:flex;justify-content:center;margin:32px 0 0 0;">
+      <a href="pags/nws.html" class="news-carousel-press-btn">Ir a Sala de Prensa</a>
+    </div>
+    </div>
+
+    <section class="about-banner-main">
+      <div class="about-banner">
+        <div class="about-banner-left">
+          <img src="images/kidia_team.jpeg" alt="Equipo KID-IA" class="about-banner-photo">
+        </div>
+        <div class="about-banner-right">
+          <h2 class="about-banner-title">¿Quiénes somos?</h2>
+          <p class="about-banner-desc">
+            Somos un equipo multidisciplinario de desarrolladores, terapeutas y educadores comprometidos con crear soluciones inclusivas que potencien el desarrollo integral de niños y niñas con TEA, combinando tecnología, diseño y afecto.
+          </p>
+          <a class="about-banner-btn" href="pags/quienes-somos.html">Conoce más</a>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
     <p>© 2025 KID-IA</p>
   </footer>
+
+  <!-- <script src="intl/js/news/newsData.i18n.js"></script> -->
+  <script src="intl/js/news/newsData.es.js"></script>
+  <script src="intl/js/news/newsData.translations.js"></script>
+  <script src="js/news-carousel.js"></script>
+  <script src="js/news-dynamic.js"></script>
+  <script>
+    // Banner slider simple
+    document.addEventListener('DOMContentLoaded', function() {
+      const imgs = document.querySelectorAll('.banner-slider .banner-img');
+      let idx = 0;
+      setInterval(() => {
+        imgs.forEach((img, i) => img.classList.toggle('active', i === idx));
+        idx = (idx + 1) % imgs.length;
+      }, 3200);
+    });
+  </script>
 </body>
 </html>
